@@ -2,9 +2,10 @@
 #carwiki {
     color:blue;
     text-align: center;
-    font-size: 60px;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: bold;
+    font-size: 100px;
+    font-family: "Faster One", system-ui;
+    font-weight: 400;
+    font-style: normal;
 }
 /* for carhead */
 #carhead {
@@ -13,21 +14,28 @@
     font-weight: bold;
 }
 .carname {
-    font-family: 'Lucida Sans Unicode';
+    font-family: "Changa", sans-serif;
     font-size: 30px;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    color: white;
 }
 p {
     font-family: 'arial';
     text-align: justify;
+    color: white;
 }
 li {
     font-family: 'Arial';
     text-align: justify;
+    color: white;
 }
 h2 {
     font-family: 'Lucida Sans Unicode';
     font-size: 20px;
     font-weight: bold;
+    color: white;
 }
 /* cars */
 #spyder {
@@ -54,9 +62,19 @@ h2 {
     font-family: 'Times New Roman';
     text-align: center;
 }
-#benz {
+#benz{
     color: royalblue;
     font-size: 50px;
     font-family: 'Times New Roman';
     text-align: center;
+}
+div {
+    width: 60%;
+    margin-left: 20%;
+}
+img {
+    width: 100%;
+}
+* {
+    background-color: black;
 }
