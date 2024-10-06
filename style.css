@@ -41,31 +41,36 @@ h2 {
 #spyder {
     color: limegreen;
     font-size: 50px;
-    font-family: 'Trebuchet MS';
+    font-family: "Changa", sans-serif;
+    font-weight: 400;
     text-align: center;
 } 
 #mclaren {
     color: orangered;
     font-size: 50px;
-    font-family: 'Trebuchet MS';
+    font-family: "Changa", sans-serif;
+    font-weight: 400;
     text-align: center;
 }
 #ferrari {
     color:red;
     font-size: 50px;
-    font-family: 'Trebuchet MS';
+    font-family: "Changa", sans-serif;
+    font-weight: 400;
     text-align: center;
 }
 #martin {
     color: goldenrod;
     font-size: 50px;
-    font-family: 'Times New Roman';
+    font-family: "Changa", sans-serif;
+    font-weight: 400;
     text-align: center;
 }
 #benz{
     color: royalblue;
     font-size: 50px;
-    font-family: 'Times New Roman';
+    font-family: "Changa", sans-serif;
+    font-weight: 400;
     text-align: center;
 }
 div {
