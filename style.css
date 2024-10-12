@@ -275,7 +275,7 @@ img {
     margin: 70px;
 }
 .mbfront:hover {
-    content: url(mbgallery/mbback.jpg);
+    content: url(mbgallery/mbfront.jpg);
 }
 .mbback {
     display: inline-block;
