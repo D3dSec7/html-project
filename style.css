@@ -2,17 +2,16 @@
 #carwiki {
     color:blue;
     text-align: center;
+    text-transform: uppercase;
     font-size: 100px;
     font-family: "Faster One", system-ui;
     font-weight: 400;
-    font-style: normal;
+    font-style: normal;   
 }
-/* for carhead */
-#carhead {
-    font-size: 45px;
-    font-family: 'Helvetica';
-    font-weight: bold;
+#carwiki:hover {
+    color: red;
 }
+/* for list of cars */
 .carname {
     font-family: "Changa", sans-serif;
     font-size: 30px;
@@ -37,7 +36,20 @@ h2 {
     font-weight: bold;
     color: white;
 }
-/* cars */
+a:hover {
+    color: yellow;
+}
+div {
+    width: 60%;
+    margin-left: 20%;
+}
+img {
+    width: 100%;
+}
+* {
+    background-color: black;
+}
+/* cars names */
 #spyder {
     color: limegreen;
     font-size: 50px;
@@ -73,13 +85,204 @@ h2 {
     font-weight: 400;
     text-align: center;
 }
-div {
-    width: 60%;
-    margin-left: 20%;
+/* car content */
+.porsche {
+    color: lime;
 }
-img {
-    width: 100%;
+.mclaren {
+    color: orangered;
 }
-* {
-    background-color: black;
+.ferrari {
+    color:red; 
+}
+.martin {
+    color: goldenrod;
+}
+.benz {
+    color: royalblue;
+}
+/* porsche gallery */
+.pinterior {
+    display: inline-block;
+    width: 500px;
+    height: 350px;
+    margin: 70px;
+}
+.pinterior:hover {
+    content: url(pgallery/pinterior.jpg);
+}
+.pexterior {
+    display: inline-block;
+    width: 500px;
+    height: 350px;
+    margin: 70px;
+}
+.pexterior:hover {
+    content: url(pgallery/pexterior.jpg);
+}
+.pfront {
+    display: inline-block;
+    width: 500px;
+    height: 350px;
+    margin: 70px;
+}
+.pfront:hover {
+    content: url(pgallery/pfront.jpg);
+}
+.pback{
+    display: inline-block;
+    width: 500px;
+    height: 350px;
+    margin: 70px;
+}
+.pback:hover {
+    content: url(pgallery/pback.jpg);
+}
+/* mclaren gallery */
+.minterior {
+    display: inline-block;
+    width: 500px;
+    height: 350px;
+    margin: 70px;
+}
+.minterior:hover {
+    content: url(mgallery/minterior.jpg);
+}
+.mexterior {
+    display: inline-block;
+    width: 500px;
+    height: 350px;
+    margin: 70px;
+}
+.mexterior:hover {
+    content: url(mgallery/mexterior.jpg);
+}
+.mfront {
+    display: inline-block;
+    width: 500px;
+    height: 350px;
+    margin: 70px;
+}
+.mfront:hover {
+    content: url(mgallery/mfront.jpg);
+}
+.mback {
+    display: inline-block;
+    width: 500px;
+    height: 350px;
+    margin: 70px;
+}
+.mback:hover {
+    content: url(mgallery/mback.jpg);
+}
+/* ferrari gallery */
+.finterior {
+    display: inline-block;
+    width: 500px;
+    height: 350px;
+    margin: 70px;
+}
+.finterior:hover {
+    content: url(fgallery/finterior.jpg);
+}
+.fexterior {
+    display: inline-block;
+    width: 500px;
+    height: 350px;
+    margin: 70px;
+}
+.fexterior:hover {
+    content: url(fgallery/fexterior.jpg);
+}
+.ffront {
+    display: inline-block;
+    width: 500px;
+    height: 350px;
+    margin: 70px;
+}
+.ffront:hover {
+    content: url(fgallery/ffront.jpg);
+}
+.fback {
+    display: inline-block;
+    width: 500px;
+    height: 350px;
+    margin: 70px;
+}
+.fback:hover {
+    content: url(fgallery/fback.jpg);
+}
+/* aston gallery */
+.aminterior {
+    display: inline-block;
+    width: 500px;
+    height: 350px;
+    margin: 70px;
+}
+.aminterior:hover {
+    content: url(amgallery/aminterior.jpg);
+}
+.amexterior {
+    display: inline-block;
+    width: 500px;
+    height: 350px;
+    margin: 70px;
+}
+.amexterior:hover {
+    content: url(amgallery/amexterior.jpg);
+}
+.amfront {
+    display: inline-block;
+    width: 500px;
+    height: 350px;
+    margin: 70px;
+}
+.amfront:hover {
+    content: url(amgallery/amfront.jpg);
+}
+.amback {
+    display: inline-block;
+    width: 500px;
+    height: 350px;
+    margin: 70px;
+}
+.amback:hover {
+    content: url(amgallery/amback.jpg);
+}
+/* mercedes gallery */
+.mbinterior {
+    display: inline-block;
+    width: 500px;
+    height: 350px;
+    margin: 70px;
+}
+.mbinterior:hover {
+    content: url(mbgallery/mbinterior.jpg);
+}
+.mbexterior {
+    display: inline-block;
+    width: 500px;
+    height: 350px;
+    margin: 70px;
+}
+.mbexterior:hover {
+    content: url(mbgallery/mbexterior.jpg);
+}
+.mbfront {
+    display: inline-block;
+    width: 500px;
+    height: 350px;
+    margin: 70px;
+}
+.mbfront:hover {
+    content: url(mbgallery/mbback.jpg);
+}
+.mbback {
+    display: inline-block;
+    width: 500px;
+    height: 350px;
+    margin: 70px;
+}
+.mbback:hover {
+    content: url(mbgallery/mbback.jpg);
 }
