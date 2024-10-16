@@ -87,7 +87,7 @@ img {
 }
 /* car content */
 .porsche {
-    color: lime;
+    color: limegreen;
 }
 .mclaren {
     color: orangered;
@@ -101,12 +101,14 @@ img {
 .benz {
     color: royalblue;
 }
+
 /* porsche gallery */
 .pinterior {
     display: inline-block;
     width: 500px;
     height: 350px;
     margin: 70px;
+    border: 10px solid limegreen;
 }
 .pinterior:hover {
     content: url(pgallery/pinterior.jpg);
@@ -116,6 +118,7 @@ img {
     width: 500px;
     height: 350px;
     margin: 70px;
+    border: 10px solid limegreen;
 }
 .pexterior:hover {
     content: url(pgallery/pexterior.jpg);
@@ -125,6 +128,7 @@ img {
     width: 500px;
     height: 350px;
     margin: 70px;
+    border: 10px solid limegreen;
 }
 .pfront:hover {
     content: url(pgallery/pfront.jpg);
@@ -134,6 +138,7 @@ img {
     width: 500px;
     height: 350px;
     margin: 70px;
+    border: 10px solid limegreen;
 }
 .pback:hover {
     content: url(pgallery/pback.jpg);
@@ -144,6 +149,7 @@ img {
     width: 500px;
     height: 350px;
     margin: 70px;
+    border: 10px solid orangered;
 }
 .minterior:hover {
     content: url(mgallery/minterior.jpg);
@@ -153,6 +159,7 @@ img {
     width: 500px;
     height: 350px;
     margin: 70px;
+    border: 10px solid orangered;
 }
 .mexterior:hover {
     content: url(mgallery/mexterior.jpg);
@@ -162,6 +169,7 @@ img {
     width: 500px;
     height: 350px;
     margin: 70px;
+    border: 10px solid orangered;
 }
 .mfront:hover {
     content: url(mgallery/mfront.jpg);
@@ -171,6 +179,7 @@ img {
     width: 500px;
     height: 350px;
     margin: 70px;
+    border: 10px solid orangered;
 }
 .mback:hover {
     content: url(mgallery/mback.jpg);
@@ -181,6 +190,7 @@ img {
     width: 500px;
     height: 350px;
     margin: 70px;
+    border: 10px solid red;
 }
 .finterior:hover {
     content: url(fgallery/finterior.jpg);
@@ -190,6 +200,7 @@ img {
     width: 500px;
     height: 350px;
     margin: 70px;
+    border: 10px solid red;
 }
 .fexterior:hover {
     content: url(fgallery/fexterior.jpg);
@@ -199,6 +210,7 @@ img {
     width: 500px;
     height: 350px;
     margin: 70px;
+    border: 10px solid red;
 }
 .ffront:hover {
     content: url(fgallery/ffront.jpg);
@@ -208,6 +220,7 @@ img {
     width: 500px;
     height: 350px;
     margin: 70px;
+    border: 10px solid red;
 }
 .fback:hover {
     content: url(fgallery/fback.jpg);
@@ -218,6 +231,7 @@ img {
     width: 500px;
     height: 350px;
     margin: 70px;
+    border: 10px solid goldenrod;
 }
 .aminterior:hover {
     content: url(amgallery/aminterior.jpg);
@@ -227,6 +241,7 @@ img {
     width: 500px;
     height: 350px;
     margin: 70px;
+    border: 10px solid goldenrod;
 }
 .amexterior:hover {
     content: url(amgallery/amexterior.jpg);
@@ -236,6 +251,7 @@ img {
     width: 500px;
     height: 350px;
     margin: 70px;
+    border: 10px solid goldenrod;
 }
 .amfront:hover {
     content: url(amgallery/amfront.jpg);
@@ -245,6 +261,7 @@ img {
     width: 500px;
     height: 350px;
     margin: 70px;
+    border: 10px solid goldenrod;
 }
 .amback:hover {
     content: url(amgallery/amback.jpg);
@@ -255,6 +272,7 @@ img {
     width: 500px;
     height: 350px;
     margin: 70px;
+    border: 10px solid royalblue;
 }
 .mbinterior:hover {
     content: url(mbgallery/mbinterior.jpg);
@@ -264,6 +282,7 @@ img {
     width: 500px;
     height: 350px;
     margin: 70px;
+    border: 10px solid royalblue;
 }
 .mbexterior:hover {
     content: url(mbgallery/mbexterior.jpg);
@@ -273,6 +292,7 @@ img {
     width: 500px;
     height: 350px;
     margin: 70px;
+    border: 10px solid royalblue;
 }
 .mbfront:hover {
     content: url(mbgallery/mbfront.jpg);
@@ -282,6 +302,7 @@ img {
     width: 500px;
     height: 350px;
     margin: 70px;
+    border: 10px solid royalblue;
 }
 .mbback:hover {
     content: url(mbgallery/mbback.jpg);
