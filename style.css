@@ -210,7 +210,6 @@ img {
     z-index: 1000;
 }
 
-/* Target the overlay to make it visible */
 .overlay:target {
     opacity: 1;
     visibility: visible;
