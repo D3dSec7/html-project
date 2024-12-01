@@ -3,112 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aston Martin DB5</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@200..800&family=Faster+One&display=swap" rel="stylesheet">
-
+    <link rel="icon" href="ico/aston.png" type="image/png">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="ico/aston martin.ico" type="image/x-icon">
-    <style>  
-        h1 {
-            color: goldenrod;
+    <title>Aston Martin DB5</title>
+
+    <style>
+
+        .container .header .logo img {
+            width: 100%;
+            height: 70px;
+            background-size: cover;
+            background-repeat: no-repeat; 
         }
-        h1:hover{
-            transform: translate(-5px -5px);
-            text-shadow: 1px 4px 5px rgba(255, 115, 0, 0.857);
-        }
-        h2 {
-            color: goldenrod;
-            text-align: center;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        ul, ol {
-            text-align: justify;
-            margin: 15px auto;
-            color: white;
-            font-family: Arial, Helvetica, sans-serif;
+
+        .container .main-content .car-img img{
+            width: 100%;
+            height: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
         }
     </style>
 </head>
 <body>
-    <input type="checkbox" id="toggleSidebar">
-
-    <!-- Toggle Button -->
-    <label for="toggleSidebar" class="toggle-btn">☰</label>
-
-    <!-- Sidebar -->
-    <div class="sidebar">
-        <a href="./index.html">🏠︎ Home</a>
-        <a href="./coming soon.html">⚙︎ Services</a>
-        <a href="./profile.html">ⓘ About Developer</a>
-        <a href="./coming soon.html">✆ Contact</a>
-    </div>
-    
     <div class="container">
-        <!-- Car name and image -->
-        <h1>Aston Martin DB5</h1>
-        <img src="./images/Aston Martin.jpg" alt="Aston Martin">
-        <hr>
-        <br>
-        <a href="Aston Martin Gallery.html" class="gallery">VIEW GALLERY</a>
-        <!-- content -->
-        <div class="contbox">
-            <div class="contbox1">
-                <h2 draggable="true">Specifications</h2>
-                <img src="images/astengine.jpg" alt="Pengine" class="boximg">
-                    <ul>
-                        <li>Engine Type:  Inline 6-cylinder gasoline engine</li>
-                        <br>
-                        <li>Displacement: 4.0 liters (3995 cc)</li>
-                        <br>
-                        <li>Fuel System: Triple SU carburetors</li>
-                        <br>
-                        <li>Power Output: 282 horsepower</li>
-                        <br>
-                        <li>Transmission: 5-speed manual or 3-speed automatic</li>
-                    </ul>
+        <div class="header">
+            <div class="logo">
+                <img src="logos/aston.png">
             </div>
-
-            <div class="contbox2">
-                <h2 draggable="true">Performance</h2>
-                <img src="images/astperf.jpg" alt="Pperf" class="boximg">
-                    <ul>
-                        <li>145 mph (233 km/h)</li>
-                        <br>
-                        <li>Acceleration (0-60 mph): Around 8 seconds</li>
-                        <br>
-                    </ul>
+            <div class="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="coming soon.html">About</a></li>
+                    <li><a href="profile.html">Portfolio</a></li>
+                    <li><a href="coming soon.html">Contact</a></li>
+                </ul>
             </div>
-
-            <div class="contbox3">
-                <h2 draggable="true">Design</h2>
-                <img src="images/astdesign.jpg" alt="Pdesign" class="boximg">
-                    <ul>
-                        <li>Body Style: Two-door coupe with a classic and elegant design</li>
-                        <br>
-                        <li>Material: Lightweight aluminum body with steel frame for strength</li>
-                        <br>
-                        <li>Wheel Size: 15-inch wire-spoke wheels with thin, high-performance tires</li>
-                    </ul>
-            </div>
-
-            <div class="contbox4">
-                <h2 draggable="true">Racing and Achievements</h2>
-                    <ul>
-                        <li>James Bond Icon: Although not primarily a racing car, the<br> 
-                            DB5 became famous for its role as James Bond’s car in the<br> 
-                            1964 film Goldfinger.</li>
-                        <br>
-                        <li>Heritage and Influence: The DB5 helped establish Aston Martin<br> 
-                            as a key player in the luxury sports car market.<br>
-                        <br>
-                        <li>Endurance and Rallying: While not a full-time race car, the<br> 
-                            DB5 was entered in a few endurance races and rally events</li>
-                    </ul>
+            <div class="buttons">
+                <button>Book Now</button>
+                <button onclick="window.location.href='Aston Martin Gallery.html';">Gallery</button>
             </div>
         </div>
-        <a href="./index.html">(Back To Home)</a><br>
+        <div class="main-content">
+            <div class="content">
+                <h1>Aston Martin<br><span>DB5</span></h1>
+                    <p>Intensity. Driven.</p>
+            </div>
+            <div class="car-img">
+                <img src="images/aston.png">
+            </div>
+        </div>
+        <div class="features">
+            <div class="engine">
+                <img src="images/astengine.jpg">
+                <p>282 horsepower (210 kW)  Inline 6-cylinder gasoline engine</p>
+            </div>
+            <div class="transmission">
+                <img src="images/asttrans.jpg">
+                <p>5-speed manual transmission</p>
+            </div>
+            <div class="performance">
+                <img src="images/astperf.jpg">
+                <p>Top Speed:  145 mph (233 km/h), 0-60 mph in 8 s</p>
+            </div>
+            <div class="brake">
+                <img src="images/astbrake.jpg">
+                <p>Hydraulic disc brakes</p>
+            </div>
+        </div>         
     </div>
 </body>
 </html>

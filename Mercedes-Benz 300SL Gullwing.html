@@ -3,111 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mercedes-Benx 300SL Gullwing</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@200..800&family=Faster+One&display=swap" rel="stylesheet">
-
+    <link rel="icon" href="ico/mercedes.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="ico/mercedes.ico" type="image/x-icon">
-    <style>  
-        h1 {
-            color: #0a3d85
+    <title>Mercedes-Benz 300SL Gullwing</title>
+    
+    <style>
+        .container .header .logo img {
+            width: 105px;
+            height: 90px;
+            background-size: cover;
+            background-repeat: no-repeat; 
         }
-        h1:hover{
-            transform: translate(-5px -5px);
-            text-shadow: 1px 4px 5px rgb(3, 185, 251)
-        }
-        h2 {
-            color: #0a3d85;
-            text-align: center;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        ul, ol {
-            text-align: justify;
-            margin: 15px auto;
-            color: white;
-            font-family: Arial, Helvetica, sans-serif;
+
+        .container .main-content .car-img img {
+            width: 100%;
+            height: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
         }
     </style>
 </head>
 <body>
-
-    <input type="checkbox" id="toggleSidebar">
-
-    <!-- Toggle Button -->
-    <label for="toggleSidebar" class="toggle-btn">☰</label>
-
-    <!-- Sidebar -->
-    <div class="sidebar">
-        <a href="./index.html">🏠︎ Home</a>
-        <a href="./coming soon.html">⚙︎ Services</a>
-        <a href="./profile.html">ⓘ About Developer</a>
-        <a href="./coming soon.html">✆ Contact</a>
-    </div>
-    
     <div class="container">
-        <!-- Car name and image -->
-        <h1>Mercedes-Benz 300SL Gullwing</h1>
-        <img src="./images/Mercedes Benz 300SL Gullwing.png" alt="Mclaren Spyder">
-        <hr>
-        <br>
-        <a href="Mercedes Gallery.html" class="gallery">VIEW GALLERY</a>
-        <!-- content -->
-        <div class="contbox">
-            <div class="contbox1">
-                <h2 draggable="true" class="porsche">Specifications</h2>
-                <img src="images/merengine.jpg" alt="Pengine" class="boximg">
-                    <ul>
-                        <li>Inline 6-cylinder gasoline engine</li>
-                        <br>
-                        <li>Displacement: 3.0 liters</li>
-                        <br>
-                        <li>Fuel System: Mechanical fuel injection</li>
-                        <br>
-                        <li>Power Output: 215 horsepower</li>
-                        <br>
-                        <li>Transmission: 4-speed manual</li>
-                    </ul>
+        <div class="header">
+            <div class="logo">
+                <img src="logos/mercedes.png">
             </div>
-
-            <div class="contbox2">
-                <h2 draggable="true" class="porsche">Performance</h2>
-                <img src="images/merperf.jpg" alt="Pperf" class="boximg">
-                    <ul>
-                        <li>Top Speed: 161 mph (259 km/h)</li>
-                        <br>
-                        <li>Acceleration (0-60 mph): Around 8.8 seconds</li>
-                    </ul>
+            <div class="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="coming soon.html">About</a></li>
+                    <li><a href="profile.html">Portfolio</a></li>
+                    <li><a href="coming soon.html">Contact</a></li>
+                </ul>
             </div>
-
-            <div class="contbox3">
-                <h2 draggable="true" class="porsche">Design</h2>
-                <img src="images/merdesign.jpg" alt="Pdesign" class="boximg">
-                    <ul>
-                        <li>Body Style: Two-door coupe with iconic upward-opening "gullwing" doors</li>
-                        <br>
-                        <li>Material: Lightweight steel body with aluminum panels for reduced weight</li>
-                        <br>
-                        <li>Wheel Size: 15-inch steel wheels with wide tires for grip and handling</li>
-                    </ul>
-            </div>
-
-            <div class="contbox4">
-                <h2 draggable="true" class="porsche">Racing and Achievements</h2>
-                    <ul>
-                        <li>Le Mans 24 Hours: The 300SL Gullwing participated<br> 
-                            in endurance racing, including the prestigious 24 Hours of Le Mans.</li>
-                        <br>
-                        <li>Formula 1 and Sports Car Racing: The 300SL Gullwing’s<br> 
-                            success on the track influenced the development of future Mercedes-Benz racing cars</li>
-                        <br>
-                        <li>Innovation and Legacy: The Gullwing doors and advanced<br> 
-                            fuel injection system made it stand out as a technological marvel of its time.</li>
-                    </ul>
+            <div class="buttons">
+                <button>Book Now</button>
+                <button onclick="window.location.href='Mercedes Gallery.html';">Gallery</button>
             </div>
         </div>
-        <a href="./index.html">(Back To Home)</a><br>
+        <div class="main-content">
+            <div class="content">
+                <h1>Mercedes Benz <br><span>300SL Gullwing</span></h1>
+                    <p>The best or nothing.</p>
+            </div>
+            <div class="car-img">
+                <img src="images/mercedes.png">
+            </div>
+        </div>
+        <div class="features">
+            <div class="engine">
+                <img src="images/merengine.jpg">
+                <p>215 horsepower (160 kW) Inline 6-cylinder gasoline engine</p>
+            </div>
+            <div class="transmission">
+                <img src="images/mertrans.jpg">
+                <p>4-speed manual transmission</p>
+            </div>
+            <div class="performance">
+                <img src="images/merperf.jpg">
+                <p>Top Speed: 161 mph (259 km/h), 0-60 mph in 8.8 s</p>
+            </div>
+            <div class="brake">
+                <img src="images/merbrake.jpg">
+                <p>Hydraulic drum brakes</p>
+            </div>
+        </div>         
     </div>
 </body>
 </html>

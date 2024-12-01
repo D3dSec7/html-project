@@ -3,112 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Porsche 918 Spyder</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@200..800&family=Faster+One&display=swap" rel="stylesheet">
-
+    <link rel="icon" href="ico/porsche.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="ico/porsche.ico" type="image/x-icon">
-    <style>  
+    <title>Porsche 918 Spyder</title>
+    
+    <style>
+        .container .header .logo img {
+            width: 105px;
+            height: 90px;
+            background-size: cover;
+            background-repeat: no-repeat; 
+        }
 
-        h1:hover{
-            transform: translate(-5px -5px);
-            text-shadow: 1px 4px 5px green;
-        }
-        h2 {
-            color: limegreen;
-            text-align: center;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        ul, ol {
-            text-align: justify;
-            margin: 15px auto;
-            color: white;
-            font-family: Arial, Helvetica, sans-serif;
+        .container .main-content .car-img img {
+            width: 100%;
+            height: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
         }
     </style>
 </head>
 <body>
-
-    <input type="checkbox" id="toggleSidebar">
-
-    <!-- Toggle Button -->
-    <label for="toggleSidebar" class="toggle-btn">☰</label>
-
-    <!-- Sidebar -->
-    <div class="sidebar">
-        <a href="./index.html">🏠︎ Home</a>
-        <a href="./coming soon.html">⚙︎ Services</a>
-        <a href="./profile.html">ⓘ About Developer</a>
-        <a href="./coming soon.html">✆ Contact</a>
-    </div>
-    
     <div class="container">
-        <!-- Car name and image -->
-        <h1 id="spyder">Porsche 918 Spyder</h1>
-        <img src="./images/Porsche.jpg" alt="Porsche 918 Spyder">
-        <hr>
-        <br>
-        <a href="Porsche Gallery.html" class="gallery">VIEW GALLERY</a>
-        <!-- content -->
-        <div class="contbox">
-            <div class="contbox1">
-                <h2 draggable="true" class="porsche">Specifications</h2>
-                <img src="images/pengine.jpg" alt="Pengine" class="boximg">
-                    <ul>
-                        <li>Engine Type: V8 gas engine combined with electric motors</li>
-                        <br>
-                        <li>Gas Engine Power: 608 horsepower</li>
-                        <br>
-                        <li>Electric Motors: Two motors, one for each axle, adding extra power</li>
-                        <br>
-                        <li>Total Power: 887 horsepower</li>
-                        <br>
-                        <li>Battery: Small battery pack for short electric-only trips (about 12 miles)</li>
-                        <br>
-                        <li>Electric-Only Speed: Can drive up to 93 mph on electric power alone</li>
-                    </ul>
+        <div class="header">
+            <div class="logo">
+                <img src="logos/porsche.png">
             </div>
-
-            <div class="contbox2">
-                <h2 draggable="true" class="porsche">Performance</h2>
-                <img src="images/pperf.jpg" alt="Pperf" class="boximg">
-                    <ul>
-                        <li>Top Speed: 214 mph (344 km/h)</li>
-                        <br>
-                        <li>Top Speed (Electric Only): 93 mph (150 km/h)</li>
-                        <br>
-                        <li>Braking Distance (60-0 mph): 94 feet (29 meters)</li>
-                    </ul>
+            <div class="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="coming soon.html">About</a></li>
+                    <li><a href="profile.html">Portfolio</a></li>
+                    <li><a href="coming soon.html">Contact</a></li>
+                </ul>
             </div>
-
-            <div class="contbox3">
-                <h2 draggable="true" class="porsche">Design</h2>
-                <img src="images/pdesign.jpg" alt="Pdesign" class="boximg">
-                    <ul>
-                        <li>Body Style: Sleek, two-seat convertible with a removable roof panel</li>
-                        <br>
-                        <li>Material: Lightweight carbon fiber for strength and reduced weight</li>
-                        <br>
-                        <li>Wheel Size: Large wheels—20 inches in front, 21 inches in back</li>
-                    </ul>
-            </div>
-
-            <div class="contbox4">
-                <h2 draggable="true" class="porsche">Racing and Achievements</h2>
-                    <ul>
-                        <li>Nürburgring Lap Record: 6 minutes and 57 seconds</li>
-                        <br>
-                        <li>Hybrid Racing Prowess: one of the first hybrid<br>
-                            supercars to compete with traditional high-performance cars</li>
-                        <br>
-                        <li>Showcasing Porsche Innovation: The 918 Spyder is considered <br>
-                            a pioneer in merging high performance with eco-friendly technology</li>
-                    </ul>
+            <div class="buttons">
+                <button>Book Now</button>
+                <button onclick="window.location.href='Porsche Gallery.html';">Gallery</button>
             </div>
         </div>
-        <a href="./index.html">(Back To Home)</a><br>
+        <div class="main-content">
+            <div class="content">
+                <h1>Porsche 918 <br><span>Spyder</span></h1>
+                    <p>Driving in its most beautiful form.</p>
+            </div>
+            <div class="car-img">
+                <img src="images/porsche.png">
+            </div>
+        </div>
+        <div class="features">
+            <div class="engine">
+                <img src="images/pengine.jpg">
+                <p>608 horsepower (453 kW) Naturally aspirated V8 engine</p>
+            </div>
+            <div class="transmission">
+                <img src="images/ptrans.jpg">
+                <p>7-speed PDK (Porsche Doppelkupplung) dual-clutch transmission</p>
+            </div>
+            <div class="performance">
+                <img src="images/pperf.jpg">
+                <p>Top Speed: 214 mph (344 km/h), 0-60 mph in 2.5 s</p>
+            </div>
+            <div class="brake">
+                <img src="images/pbrake.jpg">
+                <p>Carbon-ceramic brakes (Porsche Ceramic Composite Brakes - PCCB)</p>
+            </div>
+        </div>         
     </div>
 </body>
 </html>

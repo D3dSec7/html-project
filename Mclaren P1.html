@@ -3,114 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mclaren p1</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@200..800&family=Faster+One&display=swap" rel="stylesheet">
-
+    <link rel="icon" href="ico/mclaren.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="ico/mclaren.ico" type="image/x-icon">
-    <style>  
-        h1 {
-            color: orangered;
+    <title>McLaren P1</title>
+
+    <style>
+
+        .container .header .logo img {
+            width: 90px;
+            height: 70px;
+            background-size: cover;
+            background-repeat: no-repeat; 
         }
-        h1:hover{
-            transform: translate(-5px -5px);
-            text-shadow: 1px 4px 5px rgba(255, 115, 0, 0.857);
+        .container .main-content .car-img img{
+            width: 100%;
+            height: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
         }
-        h2 {
-            color: orangered;
-            text-align: center;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        ul, ol {
-            text-align: justify;
-            margin: 15px auto;
-            color: white;
-            font-family: Arial, Helvetica, sans-serif;
-        }
+
     </style>
 </head>
 <body>
-    <input type="checkbox" id="toggleSidebar">
-
-    <!-- Toggle Button -->
-    <label for="toggleSidebar" class="toggle-btn">☰</label>
-
-    <!-- Sidebar -->
-    <div class="sidebar">
-        <a href="./index.html">🏠︎ Home</a>
-        <a href="./coming soon.html">⚙︎ Services</a>
-        <a href="./profile.html">ⓘ About Developer</a>
-        <a href="./coming soon.html">✆ Contact</a>
-    </div>
-    
     <div class="container">
-        <!-- Car name and image -->
-        <h1>McLaren P1</h1>
-        <img src="./images/Mclaren P1.jpg" alt="Mclaren Spyder">
-        <hr>
-        <br>
-        <a href="Mclaren Gallery.html" class="gallery">VIEW GALLERY</a>
-        <!-- content -->
-        <div class="contbox">
-            <div class="contbox1">
-                <h2 draggable="true">Specifications</h2>
-                <img src="images/mcengine.jpg" alt="Pengine" class="boximg">
-                    <ul>
-                        <li>Engine Type: Twin-turbo V8 engine combined with an electric motor</li>
-                        <br>
-                        <li>Gas Engine Power: 727 horsepower</li>
-                        <br>
-                        <li>Electric Motors: 177 horsepower</li>
-                        <br>
-                        <li>Total Power: 903 horsepower</li>
-                        <br>
-                        <li>Battery: Small battery pack for short electric-only trips (about 12 miles)</li>
-                        <br>
-                        <li>Electric-Only Speed:  Can drive up to 99 mph on electric power alone</li>
-                    </ul>
+        <div class="header">
+            <div class="logo">
+                <img src="logos/mclaren.png">
             </div>
-
-            <div class="contbox2">
-                <h2 draggable="true">Performance</h2>
-                <img src="images/mcperf.jpg" alt="Pperf" class="boximg">
-                    <ul>
-                        <li>Top Speed: 217 mph</li>
-                        <br>
-                        <li>0-60 mph: 2.8 seconds</li>
-                        <br>
-                        <li>Electric-Only Range: About 6 miles</li>
-                    </ul>
+            <div class="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="coming soon.html">About</a></li>
+                    <li><a href="profile.html">Portfolio</a></li>
+                    <li><a href="coming soon.html">Contact</a></li>
+                </ul>
             </div>
-
-            <div class="contbox3">
-                <h2 draggable="true">Design</h2>
-                <img src="images/mcdesign.jpg" alt="Pdesign" class="boximg">
-                    <ul>
-                        <li>Body Style: Two-seat hypercar with an aerodynamic shape designed for high speed</li>
-                        <br>
-                        <li>Material: Lightweight carbon fiber body for strength and agility</li>
-                        <br>
-                        <li>Wheel Size: Large wheels with specially designed high-performance tires</li>
-                    </ul>
-            </div>
-
-            <div class="contbox4">
-                <h2 draggable="true">Racing and Achievements</h2>
-                    <ul>
-                        <li>Nürburgring Lap Record: sub-7- minute lap (not specified)</li>
-                        <br>
-                        <li>Hybrid Supercar Pioneer: the P1 was one of the first supercars<br>
-                            to prove hybrid technology could enhance performance rather than<br> 
-                            just improve fuel economy.</li>
-                        <br>
-                        <li>STrack-Focused P1 GTR Version: McLaren produced the P1 GTR,<br>
-                            a track-only version of the P1 </li>
-                    </ul>
+            <div class="buttons">
+                <button>Book Now</button>
+                <button onclick="window.location.href='Mclaren Gallery.html';">Gallery</button>
             </div>
         </div>
-        <a href="./index.html">(Back To Home)</a><br>
+        <div class="main-content">
+            <div class="content">
+                <h1>McLaren P1</h1>
+                    <p>Whatever it takes.</p>
+            </div>
+            <div class="car-img">
+                <img src="images/mclaren.png">
+            </div>
+        </div>
+        <div class="features">
+            <div class="engine">
+                <img src="images/mcengine.jpg">
+                <p>727 horsepower (542 kW) Twin-turbo V8 engine combined with electric motor</p>
+            </div>
+            <div class="transmission">
+                <img src="images/mctrans.jpg">
+                <p>7-speed dual-clutch automatic transmission (Seamless Shift Gearbox - SSG)</p>
+            </div>
+            <div class="performance">
+                <img src="images/mcperf.jpg">
+                <p>Top Speed: 217 mph (350 km/h), 0-60 mph in 2.8 s</p>
+            </div>
+            <div class="brake">
+                <img src="images/mcbrake.jpg">
+                <p>Carbon-ceramic brakes with Akebono technology</p>
+            </div>
+        </div>         
     </div>
 </body>
 </html>

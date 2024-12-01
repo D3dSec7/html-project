@@ -1,81 +1,137 @@
 <!DOCTYPE html>
-        <html lang="en">
-            <head>
-                <meta charset="UTF-8">
-                <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <title>html profile</title>
-                <link rel="stylesheet" href="style.css">
-                <style>
-                    body {
-                        background-color: #1A1A1D;
-                        display: flex;
-                        margin-left: 37%;
-                        margin-top: 7%;
-                        font-family: Arial, Helvetica, sans-serif;
-                    }
-                    /* content box */
-                    .box {
-                        background-color: #1F1F1F;
-                        color: white;
-                        border-radius: 3%;
-                        padding: 30px;
-                        text-align: center;
-                        width: 320px;
-                    }
-                    .address {
-                        color: yellowgreen;
-                    }
-                    img {
-                        width: 100px;
-                        height: 100px;
-                        border-radius: 50%;
-                        margin-bottom: 0px;
-                    }
-                    h1 {
-                        font-size: 23px;
-                    }
-                    button {
-                        background-color: #343433;
-                        color: white;
-                        border: none;
-                        padding: 10px 20px;
-                        margin: 5px 0px;
-                        border-radius: 5px;
-                        width: 100%;
-                        font-size: 15px;
-                        cursor: pointer;
-                    } 
-                    button:hover {
-                        background-color: #555552;
-                    }
-                </style>
-            </head>
-            <body>
-                 <!-- Hidden Checkbox for Sidebar Toggle -->
-                <input type="checkbox" id="toggleSidebar">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            border: none;
+            outline: none;
+            font-family: 'Poppins', sans-serif;
+        }
+        html{
+            font-size: 62.5%;
+        }
+        body{
+            width: 100%;
+            height: 100vh;
+            overflow-x: hidden;
+            background-color: #1A1A1D;
+            color: white;
+        }
+       
+        .logo:hover{
+            transform: scale(1.1);
+        }
+        nav {
+            margin-right: 80px;
+        }
+        nav a{
+            font-size: 1.8rem;
+            color: white;
+            margin-left: 8rem;
+            font-weight: 500;
+            transition: 0.3s ease;
+            border-bottom: 3px solid transparent;
+        }
+        nav a:hover,
+        nav a.active{
+            color: #7A1CAC;
+            border-bottom: 3px solid #7A1CAC;
+        }
+        @media(max-width:995px){
+            nav{
+                position: absolute;
+                display: none;
+                top: 0;
+                right: 0;
+                width: 40%;
+                border-left: 3px solid #7A1CAC;
+                border-bottom: 3px solid #7A1CAC;
+                border-bottom-left-radius: 2rem;
+                padding: 1rem solid;
+                background-color: #1A1A1D;
+                border-top: 0.1rem solid #1A1A1D;
+            }
+            nav.active{
+                display: block;
+            }
+            nav a{
+                display: block;
+                font-size: 2rem;
+                margin: 3rem 0;
+            }
+            nav a:hover,
+            nav a.active{
+                padding: 1rem;
+                border-radius: 0.5rem;
+                border-bottom: 0.5rem solid #7A1CAC;
+            }
+        }
+        @keyframes fadeInFromTop {
+            from {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        nav a {
+            opacity: 0; 
+            animation: fadeInFromTop 1s forwards; 
+        }
 
-                <!-- Toggle Button -->
-                <label for="toggleSidebar" class="toggle-btn">☰</label>
-
-                <!-- Sidebar -->
-                <div class="sidebar">
-                    <a href="./index.html">🏠︎ Home</a>
-                    <a href="./coming soon.html">⚙︎ Services</a>
-                    <a href="./profile.html">ⓘ About Developer</a>
-                    <a href="./coming soon.html">✆ Contact</a>
-                </div>
-                <!-- content box -->
-                <div class="box">
-                    <img src="images/pfp.png" class="pfp">
-                    <h1> Lawrence Luke R. Baring</h1>
-                    <br>
-                        <p class="address"> Cebu City, Philippines</p>
-                    <br>
-                        <p class="quote">I'm a pro gamer 😎</p>
-                    <button onclick="document.location='https://www.facebook.com/share/rcn3NfXF2qFGcgF9/?mibextid=qi2Omg'">Facebook</button>
-                    <button onclick="document.location='https://www.reddit.com/u/V1aRecon/s/xybXTfbIbL'">Reddit</button>
-                    <button onclick="document.location='https://github.com/D3dSec7'">GitHub</button>
-                    <button onclick="document.location='https://youtube.com/@ronin5359?si=O8XCmD7uapDKBz0B'">YouTube</button>
-                </div>
-            </body>
-        </html>
+        nav a:nth-child(1) {
+            animation-delay: 0.2s;
+        }
+        nav a:nth-child(2) {
+            animation-delay: 0.4s;
+        }
+        nav a:nth-child(3) {
+            animation-delay: 0.6s;
+        }
+        nav a:nth-child(4) {
+            animation-delay: 0.8s;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="logo">Lawrence</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="coming soon.html">About</a>
+            <a href="profile.html">Portfolio</a>
+            <a href="coming soon.html">Contact</a>
+        </nav>
+    </header>
+    <section class="home">
+        <div class="home-img">
+            <img src="images/pfp.png">
+        </div>
+        <div class="home-content">
+            <h1>Hi, It's <span>Lawrence</span></h1>
+            <h3 class="typing-text">I'm a <span></span></h3>
+            <p>I am Lawrence Luke R. Baring, a student at the University of Cebu, pursuing a Bachelor of Science in Information Technology (BSIT) degree. I am passionate about technology and constantly seeking opportunities to enhance my skills in software development, programming, and networking.</p>
+            
+            <div class="social-icons">
+                <a href="https://youtube.com/@ronin5359?si=O8XCmD7uapDKBz0B"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.reddit.com/u/V1aRecon/s/xybXTfbIbL"><i class="fa-brands fa-reddit"></i></a>
+                <a href="https://github.com/D3dSec7"><i class="fa-brands fa-github"></i></a>
+                <a href="https://discord.gg/HU4qzG5h"><i class="fa-brands fa-discord"></i></a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
