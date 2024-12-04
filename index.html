@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Faster+One&family=Changa:wght@200..800&display=swap" rel="stylesheet">
-    <link rel="icon" href="ico/carwiki.png" type="image/x-icon">
+    <link rel="icon" href="ico/carwiki.png" type="image/png">
     
     <style>
         #carwiki {
@@ -50,10 +50,11 @@
             padding: 15px;
             text-decoration: none;
             transition: background 0.5s;
-            border-bottom: 1px solid #444;
+            border-bottom: 1px solid #848484;
         }
 
         .sidebar a:hover {
+            color:#AD49E1;
             background-color: #444;
         }
 
@@ -64,14 +65,19 @@
 
         .toggle-btn {
             position: absolute;
-            top: 10px;
-            left: 0px;
-            font-size: 24px;
-            background: #1A1A1D;
+            top: 20px;
+            left: 20px;
+            z-index: 10; 
+            text-decoration: none;
             color: white;
-            padding: 10px;
-            cursor: pointer;
+            background-color: #333;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-weight: bold;
             transition: left 0.5s;
+        }
+        .toggle-btn:hover {
+            background-color: #555;
         }
 
         #toggleSidebar:not(:checked) ~ .sidebar {
@@ -82,17 +88,16 @@
             left: 250px;
         }
 
+        #toggleSidebar:not(:checked) ~ .content {
+            margin-left: 250px;
+        }
         /* Content area */
         .content {
             margin-left: 0;
             padding: 20px;
             text-align: center;
-            transition: margin-left 0.3s ease-in-out;
-            color: #333; /* Dark text for readability */  
-        }
-
-        #toggleSidebar:not(:checked) ~ .content {
-            margin-left: 250px;
+            transition: margin-left 0.5s ease-in-out;
+            color: #333; 
         }
 
         /* Header */
@@ -100,7 +105,7 @@
             font-family: 'Faster One', cursive;
             font-size: 3em;
             margin: 10px 0;
-            color: #222; /* Darker header text */
+            color: #222; 
         }
 
         hr {
@@ -137,7 +142,6 @@
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
-        /* Image styling */
         img {
             max-width: 100%;
             height: auto;
@@ -165,8 +169,8 @@
             font-weight: bold;
         }
 
-        a:hover {
-            color: #AD49E1; 
+        .car-box a:hover {
+            color: #e8fb16; 
         }
 
     </style>
@@ -178,9 +182,9 @@
     <!-- Sidebar -->
     <div class="sidebar">
         <a href="index.html">🏠︎ Home</a>
-        <a href="coming soon.html">⚙︎ About</a>
+        <a href="about.html">⚙︎ About</a>
         <a href="profile.html">ⓘ Portfolio</a>
-        <a href="coming soon.html">✆ Contacts</a>
+        <a href="Contacts.html">✆ Contacts</a>
     </div>
 
     <!-- Toggle Button -->

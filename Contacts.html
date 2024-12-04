@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="icon" href="ico/carwiki.png" type="image/png">
+    <title>Contacts</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        .return-btn {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        z-index: 10; /* Add this line */
+        text-decoration: none;
+        color: white;
+        background-color: #333;
+        padding: 10px 15px;
+        border-radius: 5px;
+        font-weight: bold;
+        transition: background-color 0.3s;
+        }   
+
+        .return-btn:hover {
+            background-color: #555;
+        }
+
+        body {
+            background-color: #1A1A1D;
+            color: white;
+        }
+        .mecontact {
+            color: #7A1CAC;
+        }
+        .contact {
+            position: relative;
+            min-height: 100vh;
+            padding: 50px 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .contact .content {
+            max-width: 800px;
+            text-align: center;
+        }
+
+        .contact .content h2 {
+            font-size: 36px;
+            font-weight: 500;
+        }
+
+        .contact .content p {
+            font-weight: 300;
+             
+        }
+
+        .container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+        }
+
+        .container .contactInfo {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+        }
+        .container .contactInfo .box {
+            position: relative;
+            padding: 20px 0;
+            display: flex;
+        }
+        .container .contactInfo .box .icon {
+            min-width: 60px;
+            height: 60px;
+            color: #e8fb16;
+            background: #7A1CAC;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            font-size: 22px;
+        }
+
+        .container .contactInfo .box .text {
+            display: flex;
+            margin-left: 20px;
+            font-size: 16px;
+            color: white;
+            flex-direction: column;
+            font-weight: 300;
+        }
+
+        .container .contactInfo .box .text h3 {
+            font-weight: 500;
+            color: #7A1CAC;
+        }
+        .contactForm {
+            width: 40%;
+            padding: 40px;
+            background: rgb(16, 16, 16);
+        }
+        .contactForm h2 {
+            font-size: 30px;
+            color: #a700fa;
+            font-weight: 500;
+        }
+
+        .contactForm .inputBox {
+            position: relative;
+            width: 100%;
+            margin: 10px;
+        }
+
+        .contactForm .inputBox textarea,
+        .contactForm .inputBox input {
+            width: 100%;
+            padding: 5px 0;
+            font-size: 16px;
+            margin: 10px 0;
+            border: none;
+            border-bottom: 2px solid #a700fa;
+            outline: none;
+            resize: none;
+        }
+
+        .contactForm .inputBox span {
+            position: absolute;
+            left: 0;
+            padding: 5px 0;
+            font-size: 16px;
+            margin: 10px 0;
+            pointer-events: none;
+            transition: 0.5s;
+            color: #a700fa;
+        }
+
+        .contactForm .inputBox input:focus ~ span,
+        .contactForm .inputBox input:valid ~ span,
+        .contactForm .inputBox textarea:focus ~ span,
+        .contactForm .inputBox textarea:focus ~ span {
+            color:#e8fb16;
+            font-size: 12px;
+            transform: translateY(-20px);
+        }
+        .contactForm .inputBox input[type="submit"] {
+            width: 100px;
+            background: #a700fa;
+            border: none; 
+            border-radius: 10px;
+            cursor: pointer;
+            padding: 10px;
+            font-size: 18px;
+        }
+        .contactForm .inputBox input[type="submit"]:hover {
+            color:#e8fb16;
+        }
+        
+        @media (max-width: 991px) {
+            .contact{
+                padding: 50px;
+            }
+            .container{
+                flex-direction: column;
+            }
+            .container .contactInfo{
+                margin-bottom: 40px;
+            }
+            .container .contactInfo, .contactForm {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="return-btn">⮜</a>
+    
+    <section class="contact">
+        <div class="content">
+            <h2 class="mecontact">Contact Us</h2>
+            <p><p>We’d love to hear from you! Feel free to drop us a message, and we’ll get back to you as soon as possible.</p></p>
+        </div>
+        <div class="container">
+            <div class="contactInfo">
+                <div class="box">
+                    <div class="icon"><i class="fa-solid fa-location-dot" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h3>Address</h3>
+                        <p>Sanciangko St,<br> Cebu City,<br>Philippines</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa-solid fa-phone" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h3>Phone</h3>
+                        <p>(312) 867-5309</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa-regular fa-envelope" aria-hidden="true"></i></div>
+                    <div class="text"> 
+                        <h3>Email</h3>
+                        <p>dontcontactme@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contactForm">
+                <form>
+                    <h2>Send Message</h2>
+                    <div class="inputBox">
+                        <input type="text" name=""  required="required">
+                        <span>Full Name</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" name=""  required="required">
+                        <span>Email</span>
+                    </div>
+                    <div class="inputBox">
+                        <textarea required="required"></textarea>
+                        <span>Your Message</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="submit" name=""  value="Send">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
