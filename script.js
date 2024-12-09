@@ -13,3 +13,6 @@ function mercedes() {
 function porsche() {
     window.location.href = 'Porsche Gallery.html';
 }
+function book() {
+    alert("car is now booked");
+}
